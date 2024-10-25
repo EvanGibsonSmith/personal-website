@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
+    "build": "env NODE_ENV=production npx eleventy",
     "start": "eleventy --serve"
   },
   "keywords": [],

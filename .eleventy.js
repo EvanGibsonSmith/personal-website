@@ -24,3 +24,7 @@ module.exports = function (eleventyConfig) {
         templateFormats: ["html", "md", "njk"],
     };
 };
+
+module.exports.config = {
+	pathPrefix: "/personal-website/",
+}
