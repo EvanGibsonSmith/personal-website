@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i");
+
+/* General styles */
+.wrapper {
+    max-width: 70%; 
+    margin: 0 auto; /* Center */
+    padding: 20px; 
+}
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	font-size: 100%;
+	vertical-align: baseline;
+    color: #f1f1f1}
+
+body, input, select, textarea {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.65;
+}
+
+body {
+    background-color: #4a4a4a;
+    color: #dcdcdc;
+    line-height: 2;
+    margin: 0;
+}
+
+/* Kind of a bad solution for this problem of scrolling on back references */
+[id] {
+    scroll-margin-top: 300px !important; /* Makes footnote back links work with nav bar */
+}
+
+/* Links */
+a {
+    color: #4a90e2; /* Dark blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", serif;
+    margin: 20px 0;
+    padding: 5px 0;
+    color: #f1f1f1;
+    border-bottom: 4px solid #4a90e2;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 3em;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    border-bottom: 5px solid #357ABD;
+}
+
+h3 {
+    color: #a0b0c5;
+    font-size: 2em;
+    border-bottom: 5px solid #357ABD;
+}
+
+h4 {
+    color: #9fc4c0;
+    font-size: 1.75em;
+    border-bottom: 5px solid #599f84;
+}
+
+h5 {
+    color: #94B494;
+    font-size: 1.5em;
+    width: 30%;
+    border-bottom: 5px solid #397648;
+}
+
+h6 {
+    font-size: 1.25em;
+    width: 30%;
+}
+
+.image {
+    border: 0;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+}
+
+    .image img {
+        display: block;
+        border-radius: 4px;
+    }
+
+    .image.left, .image.right {
+        width: 40%;
+        max-width: 10rem;
+    }
+
+        .image.left img, .image.right img {
+            width: 100%;
+        }
+
+    .image.left {
+        float: left;
+        margin: 0 1.5rem 1rem 0;
+        top: 0.25rem;
+    }
+
+    .image.right {
+        float: right;
+        margin: 0 0 1rem 1.5rem;
+        top: 0.25rem;
+    }
+
+    .image.fit {
+        display: block;
+        margin: 0 0 2rem 0;
+        width: 100%;
+    }
+
+        .image.fit img {
+            width: 100%;
+        }
+
+    .image.main {
+        display: block;
+        margin: 0 0 3rem 0;
+        width: 100%;
+    }
+
+        .image.main img {
+            width: 100%;
+        }
+        
+video {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Code blocks */
+pre {
+    background-color: #2d2d2d;
+    padding: 10px;
+    border-radius: 5px;
+    color: #c5c5c5;
+    border-left: 4px solid #4a90e2; /* Dark blue accent line for code blocks */
+    overflow-x: auto;
+}
+
+code {
+    background-color: #333;
+    color: #f8f8f2;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.note {
+    text-align: center;
+    color: #c5c5c5;
+    font-size: 10;
+    margin: 2 0 5 0;
+}
+
+.animation-container {
+    width: 100%;
+    max-width: 800px; 
+    margin: 20px auto; /* Center it on the page */
+    border: 2px solid #5a90ce; /* Dark blue border around the animation when running */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.animation-container.with-note {
+    margin-bottom: 0;
+}
+
+.animation-container.paused {
+    border-color: #dd615d; /* Paused makes a red border */
+}
+
+.animation-container video {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.animation-container img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Style the nav bar */
+.navbar {
+    background-color: #333;        /* Background color for the navbar */
+    padding: 10px 0;               /* Add padding for spacing */
+    width: 100%;                   /* Make the navbar span the full width */
+    position: fixed;               /* Keep the navbar fixed at the top of the page */
+    top: 0;                        /* Ensure it's positioned at the top */
+    z-index: 1000;                 /* Make sure it's on top of other content */
+}
+
