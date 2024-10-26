@@ -9,7 +9,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0"
   },
@@ -18,5 +17,6 @@
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-prism": "^2.3.0",
     "nunjucks": "^3.2.4"
-  }
+  },
+  "description": ""
 }
