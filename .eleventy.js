@@ -19,7 +19,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("images");
 
     return {
-        pathPrefix: "evangibsonsmith.com/",
         markdownTemplateEngine: "njk",
         htmlTemplateEngine: "njk",     
         templateFormats: ["html", "md", "njk"],
