@@ -3,7 +3,7 @@ name: Build Eleventy
 on:
   push:
     branches:
-      - main
+      - main  # This should match your main branch name
 
 jobs:
   build:
@@ -31,3 +31,4 @@ jobs:
         with:
           publish_dir: ./_site
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: main
