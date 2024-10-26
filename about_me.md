@@ -12,7 +12,7 @@ Outside of academics, I enjoy outdoor activities such as hiking, whitewater kaya
 
 ##### Contact Info
 
-Feel free to email me at egsmith@wpi.edu or evangibsonsmith@gmail.com!
+Feel free to email me at evangibsonsmith@gmail.com!
 My LinkedIn profile can be found [here](https://www.linkedin.com/in/evangibsonsmith/), although I keep most of my notable work on this site.
 
 ## Other Projects
