@@ -1,4 +1,5 @@
 ---
+title: Clue Solver
 layout: blogLayout.html
 ---
 

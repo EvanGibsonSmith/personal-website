@@ -1,4 +1,5 @@
 ---
+title: Bananagrams Solver
 layout: blogLayout.html
 ---
 
