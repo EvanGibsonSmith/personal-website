@@ -12,20 +12,13 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.amendLibrary("md", (mdLib) => mdLib.enable("code"));
     eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItPrism));
 
-    // Input directory: src
-    // Output directory: _site
     eleventyConfig.addPassthroughCopy("videos"); 
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("images");
 
+    // Input directory: src
+    // Output directory: _site
     return {
-        
-        dir: {
-            input: ".",
-            output: "docs",
-            includes: "_includes",
-        },
-
         markdownTemplateEngine: "njk",
         htmlTemplateEngine: "njk",     
         templateFormats: ["html", "md", "njk"],
