@@ -19,6 +19,12 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("images");
 
     return {
+        dir: {
+            input: ".", // was . //
+            includes: "_includes",
+            data: "_data",
+            output: "docs" // was _site, I changed for github
+          },
         markdownTemplateEngine: "njk",
         htmlTemplateEngine: "njk",     
         templateFormats: ["html", "md", "njk"],
