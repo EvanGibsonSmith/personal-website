@@ -230,7 +230,6 @@ code {
 
     pre, code {
         font-size: 0.9rem; 
-        padding: 0.8rem;
     }
 
     h1 {
@@ -251,14 +250,13 @@ code {
 }
 
 @media (max-width: 480px) {
-
+    
     body {
         font-size: 0.85rem; 
     }
 
     pre, code {
         font-size: 0.85rem; 
-        padding: 0.6rem;
     }
 
     h1 {

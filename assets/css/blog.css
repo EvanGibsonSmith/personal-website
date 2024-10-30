@@ -223,14 +223,13 @@ code {
 
 /* For smaller screens */
 @media (max-width: 768px) {
-    
+
     body {
         font-size: 0.9rem; 
     }
 
     pre, code {
         font-size: 0.9rem; 
-        padding: 0.8rem;
     }
 
     h1 {
@@ -258,7 +257,6 @@ code {
 
     pre, code {
         font-size: 0.85rem; 
-        padding: 0.6rem;
     }
 
     h1 {
