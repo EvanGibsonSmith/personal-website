@@ -7,6 +7,7 @@ layout: blogLayout.html
 
 Email: evangibsonsmith@gmail.com
 LinkedIn: https://www.linkedin.com/in/evangibsonsmith/
+GitHub: https://github.com/EvanGibsonSmith
 
 #### Who am I?
 
