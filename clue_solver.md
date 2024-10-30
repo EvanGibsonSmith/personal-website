@@ -27,7 +27,7 @@ I came up with four types of information. The first three I thought of initially
 
 To clarify, by "the player" or "this player" I mean the player that the solver is from the perspective of, and by "another player" I mean other players at the table with information to which the solver is not privy.
 
-##### Aside About ClueInfo Class
+#### Aside About ClueInfo Class
 This section just informs the last sentence or two about how specifically the idea of each type of information is stored in a class. As a small low level detail, feel free to skip this section, as it's not of great importance for the overall idea.
 
 To encode all needed information, a ClueInfo class stores five things, which player guessed, what the guess was (as a simple ClueGuess object), which player revealed a card, the card, and if the player has that card. Based on what is known, these values can be null. For example if a card is revealed to another player and we do not see which card it is, the revealed card will be null. The importance of hasCard (if the player has this card), is for the type of information in which a player is known to NOT have a card.
