@@ -19,6 +19,7 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
+    font-size: 1rem;
 	font-size: 100%;
 	vertical-align: baseline;
     color: #f1f1f1}
@@ -220,3 +221,59 @@ code {
     z-index: 1000;                 /* Make sure it's on top of other content */
 }
 
+/* For smaller screens */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 0.9rem; 
+    }
+
+    pre, code {
+        font-size: 0.9rem; 
+        padding: 0.8rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 0.85rem; 
+    }
+
+    pre, code {
+        font-size: 0.85rem; 
+        padding: 0.6rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}

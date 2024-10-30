@@ -4,8 +4,18 @@
     padding: 10px 0;               /* Add padding for spacing */
     width: 100%;                   /* Make the navbar span the full width */
     position: fixed;               /* Keep the navbar fixed at the top of the page */
+    justify-content: center;
+    align-items: center;
     top: 0;                        /* Ensure it's positioned at the top */
     z-index: 1000;                 /* Make sure it's on top of other content */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
 }
 
 /* Remove default list styles and align items horizontally using Flexbox */
@@ -21,11 +31,15 @@
     justify-content: left; 
     align-items: center;    
     text-align: center;
+    overflow-x: auto;
 	vertical-align: baseline;
 }
 
 /* Style the individual list items */
 .navbar ul li {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 10px;                
 }
 
