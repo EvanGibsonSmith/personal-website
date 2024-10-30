@@ -35,6 +35,18 @@
 	vertical-align: baseline;
 }
 
+@media (max-width: 768px) {
+    .navbar ul {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        font-size: 0.4rem;
+    }
+}
+
 /* Style the individual list items */
 .navbar ul li {
     justify-content: center;

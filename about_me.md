@@ -3,18 +3,18 @@ title: About Me
 layout: blogLayout.html
 ---
 
-# Who am I?
+# Contact Info
 
-Sidestepping the philosophic question, am I a third-year student at Worcester Polytechnic Institute in Worcester, Massachusetts. I am working toward a combined Master's and Bachelor's degree in Computer Science, and a Bachelor's degree in Electrical and Computer Engineering. On the Computer Science side, I'm very interested in deep learning and algorithms in general, while on the Electrical and Computer Engineering side, I focus on analog design. I also enjoy exploring audio applications in this field.
+Email: evangibsonsmith@gmail.com
+LinkedIn: https://www.linkedin.com/in/evangibsonsmith/
 
-On campus I am a treasurer for the WPI Chapter of Eta Kappa Nu and am the Web Secretary for Upsilon Pi Epsilon. I am on the High Powered Rocketry Club on the Electronics Design Team working on a new PCB to gather and store sensory data for this year's rocket. I also play piano in the Jazz Ensemble.
+#### Who am I?
+
+I am a third-year student at Worcester Polytechnic Institute in Worcester, Massachusetts. I am working toward a combined Master's and Bachelor's degree in Computer Science, and a Bachelor's degree in Electrical and Computer Engineering. On the Computer Science side, I'm very interested in deep learning and algorithms in general, while on the Electrical and Computer Engineering side, I focus on analog design. I also enjoy exploring audio applications in this field.
+
+On campus I am a treasurer for the WPI Chapter of Eta Kappa Nu Honors Society and am the Web Secretary for the Upsilon Pi Epsilon Honors Society. I am on the High Powered Rocketry Club on the Electronics Design Team working on a new PCB to gather and store sensory data for this year's rocket. I also play piano in the Jazz Ensemble.
 
 Outside of academics, I enjoy outdoor activities such as hiking, whitewater kayaking, and canoeing. I'm from Maine, so the picture on the homepage of this website is of Mount Katahdin from Mount Deasey. I really enjoy working on projects when I have the time (I currently have a pretty large backlog). These are not limited to the ones linked on this website, as not all of them make good write ups. 
-
-##### Contact Info
-
-Feel free to email me at evangibsonsmith@gmail.com!
-My LinkedIn profile can be found [here](https://www.linkedin.com/in/evangibsonsmith/), although I keep most of my notable work on this site.
 
 ## Other Projects
 
