@@ -14,7 +14,7 @@ There are few small things of importance mathematically: First, the players pois
 The question is simply, given a certain number of players, what is the chance that you will survive?  
 
 <div class="animation-container"> 
-    <video class='hover-video' muted playsinline>
+    <video class='hover-video' muted playsinline controls>
         <source src="/videos/CupDropAnimation.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -28,8 +28,8 @@ $$\frac{\text{Success}}{\text{Total}}=\frac{(n-1)^{b-1}}{n^{n-1}}$$
 Since this is a party game, it's natural to wonder if your odds get better or worse as the game gets larger. On one hand, it seems like since the number of cups is getting very large, the chances of picking a correct one is approaching zero as there are more player ($n-1$ poisioners) and more cups. However, the players cannot communicate with each other so there are also likely going to be more overlaps where two poisoners select the same cup. 
 
 <div class="animation-container"> 
-    <video class='hover-video' muted playsinline>
-        <source src="videos\ExpandingCups.mp4" type="video/mp4">
+    <video class='hover-video' muted playsinline controls>
+        <source src="/videos/ExpandingCups.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
@@ -37,15 +37,15 @@ Since this is a party game, it's natural to wonder if your odds get better or wo
 Based on these two competing forces, it's hard to see if your odds get better or worse. We have the formula for this, so we can easily plot it and check our intuition. 
 
 <div class="animation-container with-note"  style="width: 30%; height: auto;">
-    <img src="/images/chalices plot.png" alt="Plot of chances of survival over number of cups">
+    <img src="/images/chalices_plot.png" alt="Plot of chances of survival over number of cups">
 </div>
 <div class="note">Plot of chances of survival over number of cups.</div>
 
 As expected, we have 50% for 2 people, around 44% for 3 players, and increasingly worse odds as the number of players increases. It seems to approach a specific value! It turns out those competing forces tend to "cancel" to a constant probability. The question becomes *is* this value.
 
 <div class="animation-container"> 
-    <video class='hover-video' muted playsinline>
-        <source src="videos\SurvivalGraphAndAlgebra.mp4" type="video/mp4">
+    <video class='hover-video' muted playsinline controls>
+        <source src="videos/SurvivalGraphAndAlgebra.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
