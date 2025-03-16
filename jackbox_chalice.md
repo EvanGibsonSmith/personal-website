@@ -5,11 +5,11 @@ layout: blogLayout.html
 
 ## Jackbox Chalices
 
-This is a cute little math problem that pops out of a game called [Trivia Murder Party](https://www.jackboxgames.com/games/trivia-murder-party). This game functions as a pretty straight forward trivia game, covering a variety of topics, from questions I know to questions I don't know. When a player gets a question wrong, they have to play a mini game to not get eliminated. One of these games is **Chalices**. This game has a specific survival rate based on the number of players, and it yields a suprising (at least to me) result.
+This is a fun little math problem that pops out of a game called [Trivia Murder Party](https://www.jackboxgames.com/games/trivia-murder-party). This game functions as a pretty straightforward trivia game, covering a variety of topics, from questions I know to questions I don't know. When a player gets a question wrong, they have to play a mini game to not get eliminated. One of these games is **Chalices**. This game has a specific survival rate based on the number of players, and it yields a surprising (at least to me) result.
 
-The chalices game is very simple. There are some cups lined cup across the bottom of the screen, with various design. The players that did not get the question wrong each choose a cup to poison, following which the player that got the previous question wrong selects a cup. If they pick a safe cup, they survive. If they pick a poisoned cup, they are eliminated. That's it! Think the holy grail in [Indiana Jones and the Lost Crusade](https://www.youtube.com/watch?v=VA7J0KkanzM). 
+The chalices game is very simple. There are some cups lined cup across the bottom of the screen, with various design. The players that did not get the question wrong each choose a cup to poison, following which the player that got the previous question wrong selects a cup. If they pick a safe cup, they survive. If they pick a poisoned cup, they are eliminated. That's it! Think of the holy grail in [Indiana Jones and the Last Crusade](https://www.youtube.com/watch?v=VA7J0KkanzM). 
 
-There are few small things of importance mathematically: First, the players poisoning the cups do not communicate with each other (i.e. they cannot coordinate); Second, while the various cup designs certainly add a bit of psychological warfare (the skull cup for example is a bit on the nose), we will assume players pick randomly; Last, while multiple players can fail and that changes the number of cups that are poisoned, we will assume only one player failed that question (it turns out it doesn't matter when we take the limit later). Before diving into the math, take a guess if you think your chances of surviving go up or down as the number of players increases.
+There are a few small but important mathematical considerations: First, the players poisoning the cups cannot communicate or coordinate with each other; Second, while the various cup designs certainly add a bit of psychological warfare (the skull cup for example is a bit on the nose), we will assume players pick randomly; Lastly, while multiple players can fail—changing the number of poisoned cups—we will assume only one player failed that question. Interestingly, this assumption doesn’t affect the result when we take the limit later. Before diving into the math, take a moment to guess: do you think your chances of survival improve or worsen as more players join?
 
 The question is simply, given a certain number of players, what is the chance that you will survive?  
 
@@ -21,11 +21,13 @@ The question is simply, given a certain number of players, what is the chance th
 </div>
 
 
-In short, the math comes out to the following formula, where $n=\text{Number of Cups}$.
+In short, the math comes out to the following formula, where $n=\text{number of cups}$.
 
 $$\frac{\text{Success}}{\text{Total}}=\frac{(n-1)^{m-1}}{n^{n-1}}$$
 
-Since this is a party game, it's natural to wonder if your odds get better or worse as the game gets larger. On one hand, it seems like since the number of cups is getting very large, the chances of picking a correct one is approaching zero as there are more player ($n-1$ poisioners) and more cups. However, the players cannot communicate with each other so there are also likely going to be more overlaps where two poisoners select the same cup. 
+Since this is a party game, it's natural to wonder whether your survival odds improve or worsen as more players join. Since the number of cups is growing, you have more to choose from. However, this means more poisoners as well. It's clear that if the poisoners coordinate your odds will get increasingly worse ($1/n$), but they do not.
+
+On one hand, as the number of cups increases, it seems like the chances of picking a safe one should approach zero—after all, there are more players ($n-1$ poisoners) and more poisoned cups. However, since players cannot coordinate, multiple poisoners may choose the same cup, reducing the overall number of poisoned cups. Since there are more poisioners, it's *also* increasingly likely they will overlap. Because of these competing factors, it's not obvious (at least to me) whether your survival chances improve or worsen as the game scales.
 
 <div class="animation-container"> 
     <video class='hover-video' muted playsinline controls>
@@ -41,7 +43,7 @@ Based on these two competing forces, it's hard to see if your odds get better or
 </div>
 <div class="note">Plot of chances of survival over number of cups.</div>
 
-As expected, we have 50% for 2 people, around 44% for 3 players, and increasingly worse odds as the number of players increases. It seems to approach a specific value! It turns out those competing forces tend to "cancel" to a constant probability. The question becomes *is* this value.
+As expected, we have 50% for 2 people, around 44% for 3 players, and increasingly worse odds as the number of players increases. It seems to approach a specific value! It turns out those competing forces tend to "cancel" to a constant probability. The question becomes what *is* this value.
 
 <div class="animation-container"> 
     <video class='hover-video' muted playsinline controls>
