@@ -32,7 +32,7 @@ Typically, for small signal analysis, we want the MOSFET to be operating in satu
 This is still a work in progress! In the future, I hope to expand this video to dive deeper into the consequences of this model, and animate what it might look like when your "small signal" is too large, as well as why the equivalent model works.
 
 <div class="animation-container"> 
-    <video class='hover-video' muted playsinline>
+    <video class='hover-video' muted playsinline controls>
         <source src="/videos/MOSFETAnimation.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
