@@ -1,26 +1,25 @@
-const markdownIt = require("markdown-it"); // use markdown it for additional features
+const markdownIt = require("markdown-it"); // Use markdown-it for additional features
 const markdownItPrism = require("markdown-it-prism");
+const markdownItFootnote = require("markdown-it-footnote"); // Import markdown-it-footnote
 
 module.exports = function (eleventyConfig) {
-    let options = {
-		html: true,
-		breaks: true,
-		linkify: true,
-	};
+  let options = {
+    html: true,
+    breaks: true,
+    linkify: true,
+  };
 
-	eleventyConfig.setLibrary("md", markdownIt(options));
-    eleventyConfig.amendLibrary("md", (mdLib) => mdLib.enable("code"));
-    eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItPrism));
+  eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItFootnote));
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.enable("code"));
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItPrism));
 
-    eleventyConfig.addPassthroughCopy("videos"); 
-    eleventyConfig.addPassthroughCopy("assets");
-    eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("videos");
+  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("images");
 
-    // Input directory: src
-    // Output directory: _site
-    return {
-        markdownTemplateEngine: "njk",
-        htmlTemplateEngine: "njk",     
-        templateFormats: ["html", "md", "njk"],
-    };
+  return {
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    templateFormats: ["html", "md", "njk"],
+  };
 };

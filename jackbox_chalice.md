@@ -21,9 +21,9 @@ The question is simply, given a certain number of players, what is the chance th
 </div>
 
 
-In short, the math comes out to the following formula, where $n=\text{Number of Cups}$
+In short, the math comes out to the following formula, where $n=\text{Number of Cups}$.
 
-$$\frac{\text{Success}}{\text{Total}}=\frac{(n-1)^{b-1}}{n^{n-1}}$$
+$$\frac{\text{Success}}{\text{Total}}=\frac{(n-1)^{m-1}}{n^{n-1}}$$
 
 Since this is a party game, it's natural to wonder if your odds get better or worse as the game gets larger. On one hand, it seems like since the number of cups is getting very large, the chances of picking a correct one is approaching zero as there are more player ($n-1$ poisioners) and more cups. However, the players cannot communicate with each other so there are also likely going to be more overlaps where two poisoners select the same cup. 
 
