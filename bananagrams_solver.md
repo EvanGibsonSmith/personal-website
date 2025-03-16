@@ -42,7 +42,7 @@ This flexibility is needed for Bananagrams, where we do not know all possible go
 For the purposes of applying Bananagrams to the game, the specific cost function and heuristic are really important. I used the simplest heuristic function I could think of that would help, which was just estimating the "distance" to a solution as the number of tiles in the hand. This has the repercussions of trying the longest possible words first, and since there are many possible solutions to a given Bananagrams hand, the solutions it finds often have at least one very long word. 
 
 ```java
-public AStarHashSets(T start, BiFunction<T, T, Double> cost, Function<T, Double> heuristic, Function<T, Boolean> isGoal) {
+public AStarArrayList(T start, BiFunction<T, T, Double> cost, Function<T, Double> heuristic, Function<T, Boolean> isGoal) {
     super((T) start, cost, heuristic, isGoal); // implements from an abstract class, 
     this.pq = new DynamicIndexMinPQ<>();
 }
