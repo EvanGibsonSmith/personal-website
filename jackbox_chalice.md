@@ -45,7 +45,7 @@ As expected, we have 50% for 2 people, around 44% for 3 players, and increasingl
 
 <div class="animation-container"> 
     <video class='hover-video' muted playsinline controls>
-        <source src="videos/SurvivalGraphAndAlgebra.mp4" type="video/mp4">
+        <source src="/videos/SurvivalGraphAndAlgebra.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>

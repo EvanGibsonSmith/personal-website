@@ -6,16 +6,26 @@ for (let i = 0; i < videos.length; i++) {
 
     // Add the paused class when the video is paused
     video.addEventListener('pause', () => {
-        container.classList.add('paused'); 
+        container.classList.add('paused');
     });
 
-    // Pause the video on click
+    // Remove the paused class when the video is played
+    video.addEventListener('play', () => {
+        container.classList.remove('paused');
+    });
+
     video.addEventListener('click', () => {
         if (!video.paused) {
-            video.pause(); 
+            video.pause(); // Pause video
         } else {
-            video.play(); 
-            container.classList.remove('paused'); 
+            video.play(); // Play video
+        }
+    });
+
+    // Prevents the control bar from getting pressed and the video simulatenously, resulting in a double click.
+    video.addEventListener('click', (e) => {
+        if (e.target !== video) {
+            e.stopPropagation();
         }
     });
 }
