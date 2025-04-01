@@ -49,8 +49,10 @@ For electrical and computer engineering, I've worked with Verilog on FPGAs, and 
 ## Resume
 
 <iframe src="/images/Evan Smith D2025 Resume.pdf"></iframe>
-<a class="download-link" href="/images/Evan Smith D2025 Resume.pdf" download>
+<div style="display: flex; justify-content: center; margin-top: 10px;">
+    <a class="download-link" href="/images/Evan Smith D2025 Resume.pdf" download>
     📄 Download Resume
-</a>
+    </a>
+</div>
 
 </div>
