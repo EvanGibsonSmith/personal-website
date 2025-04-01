@@ -23,7 +23,7 @@ The question is simply, given a certain number of players, what is the chance th
 
 In short, the math comes out to the following formula, where $n=\text{number of cups}$.
 
-$$\frac{\text{Success}}{\text{Total}}=\frac{(n-1)^{m-1}}{n^{n-1}}$$
+$$\frac{\text{Success}}{\text{Total}}=\frac{(n-1)^{n-1}}{n^{n-1}}$$
 
 Since this is a party game, it's natural to wonder whether your survival odds improve or worsen as more players join. Since the number of cups is growing, you have more to choose from. However, this means more poisoners as well. It's clear that if the poisoners coordinate your odds will get increasingly worse ($1/n$), but they do not.
 
