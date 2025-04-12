@@ -1,9 +1,10 @@
 ---
 title: Bananagrams Solver
 layout: blogLayout.html
+tags: blog
 ---
 
- # Bananagrams Solver
+# Bananagrams Solver
 
 I often play Bananagrams with my friends on weekends and Fridays. One night, I was losing more than I would like to (which is to say, losing at all) and decided it would be my mission over winter break to create a solver so my computer could play for me.
 

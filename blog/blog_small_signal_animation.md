@@ -1,6 +1,7 @@
 ---
 title: Small Signal Animation
 layout: blogLayout.html
+tags: blog
 ---
 
 # Small Signal Animation

@@ -1,6 +1,7 @@
 ---
 title: Clue Solver
 layout: blogLayout.html
+tags: blog
 ---
 
 # Clue Solver
