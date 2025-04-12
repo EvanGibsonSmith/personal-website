@@ -20,23 +20,51 @@ body {
   padding: 20px;
 }
 
-/* Blog Post Listing */
+
 .blog-posts {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  /* Ensure grid items are flexible and adapt to content height */
+  align-items: center; /* Align grid items at the top */
 }
 
+/* Alternative for fixed height for each objects
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+}*/
+
 .post-preview {
+  background-color: #4c545e;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-preview:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.post-preview img {
   display: flex;
   align-items: center;
   background-color: #333; /* Dark background for posts */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 100%;  /* Ensures the image can't go beyond the block's width */
+  height: 10%;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+  display: block; /* Ensures images behave as block-level elements */
   transition: all 0.3s ease;
+  border-radius: 8px;
 }
+
 
 .post-preview:hover {
   transform: translateY(-5px);
@@ -73,6 +101,115 @@ body {
 
 .post-preview a:hover {
   color: #e67e22; /* Orange on hover for links */
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: var(--primary-light);
+  color: var(--on-primary);
+  border-bottom: 1px solid var(--divider);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Image/Video thumbnails */
+.image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 10/3; /* Keeps size consistent; adjust to your preference */
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000000; /* fallback bg if media loads slowly */
+  margin-bottom: 10%; /* Gives space below thumbnail for description */
+}
+
+.thumbnail {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.hover-gif,
+.hover-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Only fade out thumbnail if .has-hover is present */
+.image-container.has-hover:hover .hover-gif,
+.image-container.has-hover:hover .hover-video {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image-container.has-hover:hover .thumbnail {
+  opacity: 0;
+}
+
+.image-container img,
+.image-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  background-color: #000;
+}
+
+.image-container.cover img {
+  object-fit: cover;
+}
+
+.image-container.contain img {
+  object-fit: contain;
+}
+
+/* Zoom on hover */
+.image-container.has-hover:hover img.thumbnail,
+.image-container.has-hover:hover video.hover-video,
+.image-container.has-hover:hover img.hover-gif {
+  transform: scale(1.02);
+}
+
+/* Fade effect */
+.thumbnail {
+  z-index: 1;
+}
+
+.hover-gif,
+.hover-video {
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.image-container.has-hover:hover .hover-gif,
+.image-container.has-hover:hover .hover-video {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image-container.has-hover:hover .thumbnail {
+  opacity: 0;
 }
 
 /* Mobile Styles */

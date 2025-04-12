@@ -25,7 +25,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("videos");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("images");
-
+  
   return {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",

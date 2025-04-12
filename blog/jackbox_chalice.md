@@ -1,10 +1,11 @@
 ---
 title: Jackbox Chalices
-layout: blogLayout.html
+layout: blogLayout.njk
+image: /images/thumbnails/3CupCombos.png
+hover_gif: /videos/thumbnail_gifs/expanding_cups.gif
+aspect: 4.5/3
 tags: blog
 ---
-
-# Jackbox Chalices
 
 This is a fun little math problem that pops out of a game called [Trivia Murder Party](https://www.jackboxgames.com/games/trivia-murder-party). This game functions as a pretty straightforward trivia game, covering a variety of topics, from questions I know to questions I don't know. When a player gets a question wrong, they have to play a mini game to not get eliminated. One of these games is **Chalices**. This game has a specific survival rate based on the number of players, and it yields a surprising (at least to me) result.
 

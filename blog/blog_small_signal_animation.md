@@ -1,10 +1,12 @@
 ---
 title: Small Signal Animation
-layout: blogLayout.html
+layout: blogLayout.njk
+image: /images/thumbnails/smallSignalAmplifier.png
+hover_gif: "/videos/thumbnail_gifs/MOSFETAnimation.gif"
+image-fit: contain
+aspect: 1.8/1
 tags: blog
 ---
-
-# Small Signal Animation
 
 <div class="animation-container with-note"  style="width: 30%; height: auto;">
 <img src="/images/NMOS Diagram.png" alt="Image description">

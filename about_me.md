@@ -1,15 +1,7 @@
 ---
 title: About Me
-layout: blogLayout.html
+layout: blogLayout.njk
 ---
-
-# Contact Info
-
-Email: evangibsonsmith@gmail.com
-LinkedIn: https://www.linkedin.com/in/evangibsonsmith/
-GitHub: https://github.com/EvanGibsonSmith
-
-#### Who am I?
 
 I am a third-year student at Worcester Polytechnic Institute in Worcester, Massachusetts. I am working toward a combined Master and Bachelor's degree in Electrical and Computer Engineering, and a Bachelor's degree in Computer Science. From these degress I do work blending the deep learning background from my Computer Science degree and the hardware knowledge from my Electrical and Computer Engineering degree to design models that are faster and more effective.
 
