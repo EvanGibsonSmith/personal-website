@@ -2,7 +2,7 @@
 title: Bananagrams Solver
 layout: blogLayout.njk
 tags: blog
-image: "/images/thumbnails/bananagramsBoard.png"
+image: "/images/thumbnails/bananagrams_board.png"
 image-fit: "cover"
 aspect: 1/1
 ---
