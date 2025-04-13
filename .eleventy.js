@@ -1,7 +1,10 @@
 const markdownIt = require("markdown-it"); // Use markdown-it for additional features
 const markdownItPrism = require("markdown-it-prism");
 const markdownItFootnote = require("markdown-it-footnote"); // Import markdown-it-footnote
-const { stripHtml } = require("string-strip-html");
+const stripHtml = async (html) => {
+  const mod = await import("string-strip-html");
+  return mod.stripHtml(html);
+};
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("blog", function(collectionApi) {
