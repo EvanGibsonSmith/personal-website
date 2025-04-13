@@ -37,14 +37,3 @@ In my Deep Learning class, I worked on creating a musical genre shifter with a u
 Another of these was for the Software Engineering class at WPI, which involved using AWS Lambda and SQL for the backend of a "toy" concert manager website, which allowed users to buy tickets, and concert venue managers to create shows with specific seat pricings. The front end was done using React, along with JavaScript, CSS, and HTML. It is a "toy" in the sense that it has all the needed functionality of a website like this, but was reasonably unpolished (particularly on the visual side) and was never used for real concert managers or concertgoers.
 
 For electrical and computer engineering, I've worked with Verilog on FPGAs, and used Cadence for very small chip layouts. As mentioned before, I've also used Altium for my project in High Powered Rocketry Club.
-
-## Resume
-
-<iframe src="/images/Evan Smith D2025 Resume.pdf"></iframe>
-<div style="display: flex; justify-content: center; margin-top: 10px;">
-    <a class="download-link" href="/images/Evan Smith D2025 Resume.pdf" download>
-    📄 Download Resume
-    </a>
-</div>
-
-</div>

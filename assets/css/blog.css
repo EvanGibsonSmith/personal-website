@@ -19,7 +19,6 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-    font-size: 1rem;
 	font-size: 100%;
 	vertical-align: baseline;
     color: #f1f1f1}
