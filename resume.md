@@ -4,9 +4,9 @@ layout: blogLayout.njk
 ---
 
 
-<iframe src="/images/Evan Smith D2025 Resume.pdf"></iframe>
+<iframe src="/images/Evan Smith A2025 Resume.pdf"></iframe>
 <div style="display: flex; justify-content: center; margin-top: 10px;">
-    <a class="download-link" href="/images/Evan Smith D2025 Resume.pdf" download>
+    <a class="download-link" href="/images/Evan Smith A2025 Resume.pdf" download>
     📄 Download Resume
     </a>
 </div>

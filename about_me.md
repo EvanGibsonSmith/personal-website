@@ -3,7 +3,7 @@ title: About Me
 layout: blogLayout.njk
 ---
 
-I am a third-year student at Worcester Polytechnic Institute in Worcester, Massachusetts. I am working toward a combined Master and Bachelor's degree in Electrical and Computer Engineering, and a Bachelor's degree in Computer Science. From these degress I do work blending the deep learning background from my Computer Science degree and the hardware knowledge from my Electrical and Computer Engineering degree to design models that are faster and more effective.
+I am a senior at Worcester Polytechnic Institute in Worcester, Massachusetts. I am working toward a combined Master and Bachelor's degree in Electrical and Computer Engineering, and a Bachelor's degree in Computer Science. From these degress I do work blending the deep learning background from my Computer Science degree and the hardware knowledge from my Electrical and Computer Engineering degree to design models that are faster and more effective.
 
 On campus I am a treasurer for the WPI Chapter of Eta Kappa Nu Honors Society and am the President for the Upsilon Pi Epsilon Honors Society. Through these clubs we serve to help the community and get people excited about the degrees.
 
