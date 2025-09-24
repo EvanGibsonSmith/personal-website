@@ -4,6 +4,7 @@ layout: blogLayout.njk
 tags: blog
 image: "/images/thumbnails/bananagrams_board.png"
 image-fit: "cover"
+date: 2024-01-01
 aspect: 1/1
 ---
 

@@ -5,6 +5,7 @@ image: /images/thumbnails/clueTree.png
 image-fit: cover
 aspect: 4.2/3
 tags: blog
+date: 2024-09-01
 ---
 
 Similar to the [bananagrams solver](/bananagrams_solver/), I wanted to make a solver for a game where I thought I could do better. In this case, I thought an interesting problem to solve would be the best "note taking" strategy in clue. I always tried to come up with clever ways to keep track of everything in clue, but have ultimately given up in lieu of coding it! This project was done entirely in Java.

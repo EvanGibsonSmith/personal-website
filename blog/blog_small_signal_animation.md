@@ -5,6 +5,7 @@ image: /images/thumbnails/smallSignalAmplifier.png
 hover_gif: "/videos/thumbnail_gifs/MOSFETAnimation.gif"
 image-fit: contain
 aspect: 1.8/1
+date: 2024-04-01
 tags: blog
 ---
 

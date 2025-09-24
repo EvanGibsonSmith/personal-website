@@ -35,7 +35,7 @@
 </section>
 
 <div class="blog-posts">
-   {% for post in collections.blog %}
+   {% for post in collections.blog | sort(attribute="data.date") | reverse %}
         <article class="post-preview">
         <div class="image-container {% if post.data.hover_gif or post.data.hover_video %}has-hover{% endif %} 
                     {% if post.data['image-fit'] == 'contain' and post.data['image-fit'] is not undefined %}contain{% else %}cover{% endif %}" 
