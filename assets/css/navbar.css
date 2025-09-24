@@ -1,79 +1,148 @@
-/* Give space to navbar so not over other objects */
-.wrapper {
-    margin-top: 5%; /* Adjust this value based on the height of your navbar */
+/* -------------------- */
+/* Fully Self-contained Navbar */
+/* -------------------- */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i");
+
+/* -------------------- */
+/* Navbar container */
+.navbar,
+.navbar * {
+    all: unset;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif !important;
+    font-size: 17px !important;        /* slightly larger */
+    font-weight: 400 !important;
+    line-height: 1.8 !important;
+    letter-spacing: 0.3px !important;  /* slightly tighter */
+    color: #ffffff !important;
+    text-decoration: none !important;
 }
 
-/* Style the nav bar */
+
 .navbar {
-    background-color: #333;        /* Background color for the navbar */
-    padding: 0.5% 0;               /* Add padding for spacing */
-    width: 100%;                   /* Make the navbar span the full width */
-    position: fixed;               /* Keep the navbar fixed at the top of the page */
-    justify-content: center;
-    align-items: center;
-    top: 0;                        /* Ensure it's positioned at the top */
-    z-index: 1000;                 /* Make sure it's on top of other content */
+    
+    background-color: #333;                   /* Background color */
+    color: #ffffff;                           /* Text color */
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1rem;                          /* Base font size */
+    font-weight: 400;
+    line-height: 1.8;                         /* Explicit line height for vertical spacing */
+    letter-spacing: 0.5px;                    /* Optional: small word spacing */
+    
+    padding: 15px 50px;                       /* top/bottom 15px, left/right 50px */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
 }
 
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Inner div for alignment */
+/* Inner div for alignment */
+.navbar > div {
     width: 100%;
     max-width: 1200px;
+    padding-left: 50px !important;   /* match navbar padding */
+    padding-right: 50px !important;
+    margin: 0 !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Navbar list */
+.navbar ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-wrap: nowrap !important; 
+    gap: 2rem !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+
+    overflow-x: auto;            /* allow horizontal scroll if too wide */
+    white-space: nowrap;         /* prevent items from breaking lines */
+}
+
+/* Remove any default margin/padding on li */
+.navbar ul li {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 
-/* Remove default list styles and align items horizontally using Flexbox */
-.navbar ul {
+/* Links */
+.navbar ul li a {
+    display: inline-block;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.65;
-    list-style-type: none;         /* Remove bullet points from the list */
-    margin: 0;
-    padding: 0;
-    display: flex;                
-    justify-content: left; 
-    align-items: center;    
-    text-align: center;
-    overflow-x: auto;
-	vertical-align: baseline;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    transition: background 0.2s ease;
+    line-height: 1.8;
+    letter-spacing: 0.5px;                    /* match navbar ul spacing */
+    color: #ffffff;
+    padding: 12px 25px;                       /* thicker vertical padding for better spacing */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
+/* Hover effect */
+.navbar ul li a:hover {
+    background-color: #575757;
+    color: #ffffff;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
+    .navbar {
+        font-size: 0.9rem;
+        padding: 12px 30px;
+    }
     .navbar ul {
-        font-size: 0.7rem;
+        gap: 1.5rem;
+    }
+    .navbar ul li a {
+        padding: 10px 18px;
     }
 }
 
 @media (max-width: 480px) {
+    .navbar {
+        font-size: 0.75rem;
+        padding: 10px 20px;
+    }
     .navbar ul {
-        font-size: 0.4rem;
+        gap: 1rem;
+    }
+    .navbar ul li a {
+        padding: 8px 12px;
     }
 }
 
-/* Style the individual list items */
+/* Prevents mismatch between main page and hotbar */
+.navbar ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 20px !important;  /* explicit pixel gap for consistency */
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+
 .navbar ul li {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 10px;                
+    display: block !important;       /* avoid flex shrink weirdness */
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-/* Style the anchor links */
 .navbar ul li a {
-    color: white;                  /* Set the link text color to white */
-    text-decoration: none;         /* Remove underline from links */
-    padding: 10px 20px;            /* Add padding to make the links easier to click */
-    font-size: 18px;               /* Adjust the font size */
-}
-
-/* Add a hover effect for the links */
-.navbar ul li a:hover {
-    background-color: #575757;     /* Change the background color on hover */
-    border-radius: 4px;            /* Round the edges on hover */
+    display: block !important;       /* consistent width/height */
+    padding: 12px 25px !important;   /* explicit pixel padding */
+    text-decoration: none !important;
 }

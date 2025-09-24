@@ -2,10 +2,31 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i");
 
 /* General styles */
+/* Give space for fixed navbar so it doesn't overlap content */
 .wrapper {
     max-width: 70%; 
-    margin: 0 auto; /* Center */
-    padding: 20px; 
+    margin: 0 auto; /* Center wrapper */
+    padding: 70px 20px 20px 40px; /* top, right, bottom, left */
+    /* 100px top ensures content clears navbar */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 95%;
+        padding: 100px 15px 15px 20px; /* more top space for smaller screens if navbar height grows */
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 120px 10px 10px 10px; /* extra top padding for mobile */
+    }
+}
+
+/* Optional: increase title margin for readability */
+.wrapper h1 {
+    margin-left: 10px; /* slight extra left spacing from navbar */
 }
 
 html, body, div, span, applet, object,
@@ -30,6 +51,13 @@ iframe {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: block; 
     margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    iframe {
+        height: 50vh;
+    }
 }
 
 body, input, select, textarea {
@@ -107,6 +135,12 @@ h6 {
     width: 30%;
 }
 
+@media (max-width: 480px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+}
+
 .image {
     border: 0;
     border-radius: 4px;
@@ -124,9 +158,17 @@ h6 {
         max-width: 10rem;
     }
 
-        .image.left img, .image.right img {
+    .image.left img, .image.right img {
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        .image.left, .image.right {
+            float: none;
             width: 100%;
+            margin: 0 0 1rem 0;
         }
+    }
 
     .image.left {
         float: left;
@@ -146,9 +188,9 @@ h6 {
         width: 100%;
     }
 
-        .image.fit img {
-            width: 100%;
-        }
+    .image.fit img {
+        width: 100%;
+    }
 
     .image.main {
         display: block;
