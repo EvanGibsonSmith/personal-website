@@ -68,6 +68,12 @@
     white-space: nowrap;         /* prevent items from breaking lines */
 }
 
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: row !important;
+    }
+}
+
 /* Remove any default margin/padding on li */
 .navbar ul li {
     margin: 0 !important;
