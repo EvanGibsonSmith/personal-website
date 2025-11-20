@@ -1,0 +1,80 @@
+.misc-intro {
+  margin-bottom: 3rem;
+  font-size: 1.1em;
+  color: #666;
+}
+
+.misc-section {
+  margin: 4rem 0;
+  padding: 2rem 0;
+}
+
+.misc-note {
+    text-align: left;
+    color: #c5c5c5;
+    font-size: 0.9em;
+    margin: 1rem 0 0 0;
+    padding: 0.75rem;
+    background-color: #2d2d2d;
+    border-left: 4px solid #4a90e2;
+    border-radius: 3px;
+    line-height: 1.5;
+}
+
+.misc-content {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.misc-text {
+  flex: 1;
+  min-width: 0; /* Prevents flex item from overflowing */
+}
+
+.misc-text h5 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5em;
+}
+
+.misc-text p {
+  line-height: 1.6;
+}
+
+.misc-media {
+  flex: 1;
+  max-width: 45%;
+}
+
+.misc-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.misc-media img:hover {
+  transform: scale(1.02);
+}
+
+/* Reverse layout for alternating sides */
+.misc-section.reverse .misc-content {
+  flex-direction: row-reverse;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .misc-content {
+    flex-direction: column !important;
+  }
+  
+  .misc-media {
+    max-width: 100%;
+  }
+  
+  .misc-section {
+    margin: 2rem 0;
+  }
+}

@@ -22,10 +22,11 @@
 				<ul>
 					<li><a href="/">Home</a></li>
 					<li><a href="/blog_home/">Blog</a></li>
-					<li><a href="https://sites.google.com/view/barislandproject/home/">Bar Island IQP</a></li>
+					<!-- <li><a href="https://sites.google.com/view/barislandproject/home/">Bar Island IQP</a></li> -->
 					<li><a href="/about_me/">About Me</a></li>
 					<li><a href="/contact_info/">Contact Info</a></li>
-					<li><a href="/resume/">Resume</a></li>
+					<li><a href="/cv/">CV</a></li>
+					<li><a href="/misc/">Misc.</a></li>
 				</ul>
 			</div>
 		</div>
@@ -39,18 +40,17 @@
 				<!-- One -->
 				<section class="banner color1 invert style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 					<div class="content">
-						<h1>Hi! I'm Evan Smith</h1>
-						<p class="major"> I'm currently a senior ECE combined Master's and Bachelor's student and CS undergrad student at WPI, if you want to learn about me, see <a href="/about_me">here.</a></p>
+						<h1>Evan Smith</h1>
+						<p class="major"> Researching neural network efficiency at the intersection of machine learning and hardware design.</p>
 						<p class="major">
-							This website serves as a non-exhaustive compendium to share many of the projects I've done. 
-							Here, I try to provide detailed descriptions of how these projects work and my thought process building 
-							them. For many of these projects, there is always more to do, so they are updated semi-regularly. 
-							
-							I also hope to have some more educational materials here using <a href="https://www.manim.community/">manim</a>
-							for animations. 
+							I'm a final-year MS/BS student at Worcester Polytechnic Institute working on making neural networks faster, more efficient, and deployable on edge devices. My research spans model compression, neuromorphic computing, and hardware acceleration. 
 						</p>
+						<p class="major">
+							<b>Currently applying to PhD programs for Fall 2026.</b>
+						</p>
+
 						<ul class="actions stacked">
-							<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+							<li><a href="#first" class="button big wide smooth-scroll-middle">View Research</a></li>
 						</ul>
 					</div>
 					<div class="image">
@@ -59,13 +59,100 @@
 				</section>	
 
 				
+				<!-- CHASM -->
+				<section class="spotlight color1 invert style1 orient-left content-align-left">
+					<div class="content">
+						<h2>The CHASM-SWPC Dataset for Coronal Hole Detection & Analysis</h2>
+						<p>
+							Developed semantic segmentation dataset (1,400+ days) for detecting coronal holes on the solar surface. Built custom annotation pipeline and trained progressively growing U-Net models, improving IoU by 15%. Joint <b>first author</b> on paper submitted to Astronomy & Astrophysics.
+						</p>
+						<p>
+							Under review at Astronomy and Astrophysics
+						</p>
+						<ul class="actions stacked">
+							<!-- TODO add MAKE LINK WORK -->
+							<li><a href="https://arxiv.org/abs/2511.14044" class="button">Preprint</a></li>
+						</ul>
+
+					</div>
+					<div class="image">
+						<img src="/videos/thumbnail_gifs/CHASM.gif" alt="" />
+					</div>
+				</section>
+
+								<!-- StoMPP Paper -->
+				<section class="spotlight color1 invert style1 orient-right content-align-right">
+					<div class="content">
+						<h2><b>Sto</b>chastic <b>M</b>asked <b>P</b>artial <b>P</b>rogressive Binarization (StoMPP Binarization): A New Paradigm Beyond STE</h2>
+						<p>
+							Novel quantization technique for binary weight neural networks achieving 70.19% accuracy on CIFAR-100 with ResNet18 (less than 2% drop from full precision). Uses stochastic mask annealing without surrogate gradients or soft-to-hard weight transformations.
+						</p>
+						<p>
+							Preparing manuscript
+						</p>
+						<ul class="actions stacked">
+							<!-- TODO add grayed button -->
+							<li><a class="button">Paper coming soon</a></li>
+						</ul>
+
+					</div>
+					<div class="image">
+						<img src="/images/thumbnails/StoMPPHeatMap.png" alt="" />
+					</div>
+				</section>
+
+
+				<!-- LENS -->
+				<section class="spotlight color1 invert style1 orient-left content-align-left">
+					<div class="content">
+						<h2><b>LENS</b>: <b>L</b>ow <b>E</b>nergy <b>N</b>euromorphic <b>S</b>egmentation</h2>
+						<p>
+							Designing and implementing a spiking neural network accelerator for semantic segmentation on FPGA. 
+							Developed a custom Python-to-RTL pipeline with FPGA-specific quantization-aware training (QAT) and a buffered 
+							hardware architecture that exploits sparsity in spiking networks.
+						</p>
+						<p>
+							Targeting low-energy classification and semantic segmentation for autonomous driving applications 
+							using the <a href="https://www.cityscapes-dataset.com/">Cityscapes</a> dataset.
+						</p>
+						<p>
+							<small>Image shows MNIST digit input to the spiking neural network over timesteps, using 
+							<a href="https://www.intechopen.com/chapters/88251">rate encoding</a> generated at the RTL level 
+							with a pixelwise LFSR pseudo-random number generator.</small>
+						</p>
+					</div>
+					<div class="image">
+						<img src="/videos/thumbnail_gifs/MNIST_Spiking.gif" alt="" />
+					</div>
+				</section>
+							
+								
+				<!-- Systolic Array on Croc -->
+				<section class="spotlight color1 invert style1 orient-right content-align-right">
+					<div class="content">
+						<h2>Low Power Systolic Array for Croc</h2>
+						<p>
+							A smaller project, focusing on creating a very small systolic array for the small system on chip (SoC), <a href="https://github.com/pulp-platform/croc">Croc</a>, on an 180 nm process. 
+							This project explores making a systolic array for low power with fp4 and and iterated low power individual processing elements. 
+						</p>
+
+						<p>
+							This project integrates elements of the systolic array core (sauria core) from <a href="https://github.com/bsc-loca/sauria/tree/main">Sauria</a>. 
+							Our improvement are building upon the existing zero skipping, shift registers, and other improvements from Sauria.
+						</p>
+					</div>
+					<div class="image">
+						<img src="/images/thumbnails/CrocChip.png" alt="" />
+					</div>
+				</section>
+
 				<!-- KAN Paper -->
 				<section class="spotlight color1 invert style1 orient-left content-align-left">
 					<div class="content">
 						<h2>Kolmogorov Arnold Networks for Preventing Mode Collapse Generative Adversarial Networks</h2>
 
 						<ul class="actions stacked">
-							<li><a href="blog/kangan/" class="button">To Write Up</a></li>
+							<li><a href="blog/kangan/" class="button">Technical Report</a></li>
 						</ul>
 
 					</div>
@@ -74,6 +161,22 @@
 					</div>
 				</section>
 
+				<!-- Bananagrams Solver -->
+				<section class="spotlight color1 invert style4 orient-right content-align-left image-position-center">
+					<div class="content">
+						<h2>Bananagrams Solver</h2>
+
+						<p>
+							Using a generalized modification of A*, can solve and build from existing Bananagrams boards in seconds.
+						</p>
+						<ul class="actions stacked">
+							<li><a href="blog/bananagrams_solver/" class="button">To Blog</a></li>
+						</ul>
+					</div>
+					<div class="image">
+						<img src="/images/bananagramsBoard.png" alt="" />
+					</div>
+				</section>
 
 				<!-- Bar Island -->
 				<section class="spotlight color1 invert style4 orient-left content-align-left image-position-center" id="first">
@@ -92,21 +195,6 @@
 						<img src="/images/barIsland.jpg" alt="" />
 					</div>
 				</section>
-
-				<!-- Bananagrams Solver -->
-				<section class="spotlight color1 invert style4 orient-right content-align-left image-position-center">
-					<div class="content">
-						<h2>Bananagrams Solver</h2>
-
-						<ul class="actions stacked">
-							<li><a href="blog/bananagrams_solver/" class="button">To Blog</a></li>
-						</ul>
-					</div>
-					<div class="image">
-						<img src="/images/bananagramsBoard.png" alt="" />
-					</div>
-				</section>
-
 
 				<!-- Small Signal Animation -->
 				<section class="spotlight color1 invert style1 orient-left content-align-left">

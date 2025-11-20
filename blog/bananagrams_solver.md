@@ -8,7 +8,14 @@ date: 2024-01-01
 aspect: 1/1
 ---
 
-I often play Bananagrams with my friends on weekends and Fridays. One night, I was losing more than I would like to (which is to say, losing at all) and decided it would be my mission over winter break to create a solver so my computer could play for me.
+I often play Bananagrams with my friends on weekends and Fridays. One night, I was losing more than I would like to (which is to say, losing at all) and decided it would be my mission over winter break to create a solver so my computer could play for me. Below is a demo of the system. To use it, you set up your computer while playing Bananagrams as inconspicuously as possible, and type the letters you pull into the prompt. 
+
+<div class="animation-container"> 
+    <video class='hover-video' muted playsinline controls>
+        <source src="/videos/bananagrams_demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
 
 In the end, the act of typing in every letter and rearranging the board actually takes longer than just using your brain to play, at least for my friends. So, I still lose quite often, but we can pretend that isn't the case. I made a presentation on this for my induction to Upsilon Pi Epsilon, but the writeup below goes into more depth. 
 
