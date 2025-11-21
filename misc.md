@@ -24,6 +24,9 @@ layout: blogLayout.njk
                 <source src="/videos/Talking LLaMA.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <div class="misc-note">
+              An example of Talking LLaMA being pointed to a computer. It generates and then says a haiku.
+            </div>
         </div>
     </div>
   </div>
@@ -32,7 +35,7 @@ layout: blogLayout.njk
 <section class="misc-section reverse">
   <div class="misc-content">
     <div class="misc-text">
-      <h4>Momentum Function Fitting</h4>
+      <h4>Neural Network Function Fitting</h4>
       <p>This project is from a while ago when I made a very minimal neural network library from scratch to understand how a neural network and backpropagation works at a fundemental level. To test the network and get a more visual understanding of how exactly momentum works in the context of SGD, I added a momentum argument to the optimizer. I then designed a task that could take an arbitrary function and train a small neural network from my library that fit this function in 3d, by making a synthetic training dataset from points of the underlying function. This allows the real ground truth to be seen and creates a "shrink wrap" effect for the network. It also makes the benefits of momentum a lot more clear. </p>
     </div>
     <div class="misc-media">
