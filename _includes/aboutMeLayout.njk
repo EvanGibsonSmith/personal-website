@@ -1,0 +1,59 @@
+
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/assets/css/misc.css"> 
+    <link rel="stylesheet" href="/assets/css/blog.css"> 
+    <link rel="stylesheet" href="/assets/css/navbar.css"> 
+    <script src="/assets/js/video.js" defer></script> <!-- for clean manim animation start and stop -->
+    <!-- for latex -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- for code blocks to color for appropriate language -->
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-dracula.min.css is a color alternative -->
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-material-oceanic.min.css">
+
+    <!-- from ChatGPT to run latex on document load -->
+    <script type="text/javascript">
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+          },
+          options: {
+            renderActions: {
+              addMenu: []
+            }
+          }
+        };
+      </script>
+</head>
+
+<header>
+    <div class="navbar">
+        <div>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/blog_home/">Blog</a></li>
+              {# <li><a href="https://sites.google.com/view/barislandproject/home/">Bar Island IQP</a></li> #}
+              <li><a href="/about_me/">About Me</a></li>
+              <li><a href="/contact_info/">Contact Info</a></li>
+              <li><a href="/cv/">CV</a></li>
+              <li><a href="/misc/">Misc.</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="wrapper">
+        <main> <!-- Contains information from md file-->
+          {{ content | safe }} <!-- Content from the Markdown file will be injected here -->
+        </main>
+    </div>
+</body>
+
+
+</html>
