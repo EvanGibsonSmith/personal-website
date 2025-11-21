@@ -1,11 +1,27 @@
 ---
 title: About Me
-layout: blogLayout.njk
+layout: aboutMeLayout.njk
 ---
 
-I'm a final-year MS/BS student at Worcester Polytechnic Institute working at the intersection of machine learning and hardware design. My research focuses on making neural networks faster, more efficient, and deployable on resource-constrained devices, from model compression to neuromorphic computing to hardware acceleration.
 
-What drew me into this field was a realization during my undergraduate years: neural networks are remarkably inefficient, and our hardware isn't optimized for them either. As massive language models captured public attention, I became fascinated with how we can make these systems more efficient through design and implementation (e.g. Lottery Ticket Hypothesis, sparse matrix coprocessors). This led me down paths exploring the pruning, quantization design, and eventually to designing new training paradigms like StoMPP that fundamentally rethink how we approach neural network optimization.
+<section class="misc-section">
+  <div class="misc-content">
+    <div class="misc-text">
+      <h4>About Me</h4>
+      <p>
+        I'm a final-year MS/BS student at Worcester Polytechnic Institute working at the intersection of machine learning and hardware design. My research focuses on making neural networks faster, more efficient, and deployable on resource-constrained devices, from model compression to neuromorphic computing to hardware acceleration.
+      </p>
+      <p>
+        What drew me into this field was a realization during my undergraduate years: neural networks are remarkably inefficient, and our hardware isn't optimized for them either. As massive language models captured public attention, I became fascinated with how we can make these systems more efficient through design and implementation (e.g. Lottery Ticket Hypothesis, sparse matrix coprocessors). This led me down paths exploring the pruning, quantization design, and eventually to designing new training paradigms like StoMPP that fundamentally rethink how we approach neural network optimization.
+      </p>
+    </div>
+    <div class="misc-media">
+        <div class="animation-container"> 
+            <img src="/images/me.jpg" alt="Picture of me">
+        </div>
+    </div>
+  </div>
+</section>
 
 ##### Research Philosophy
 I'm driven by elegant solutions grounded in mathematical intuition. When I work on a problem, I want to understand it deeply enough that the solution feels inevitable. My quantization work (StoMPP) emerged from questioning the fundamental assumptions in binary neural network training. My current work on spiking neural networks for FPGAs stems from thinking carefully about event-driven computation and how to map that efficiently to hardware.
