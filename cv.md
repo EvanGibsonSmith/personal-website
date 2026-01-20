@@ -4,9 +4,9 @@ layout: blogLayout.njk
 ---
 
 
-<iframe src="/images/Evan_Smith_CV.pdf"></iframe>
+<iframe src="/images/EvanGibsonSmithCV.pdf"></iframe>
 <div style="display: flex; justify-content: center; margin-top: 10px;">
-    <a class="download-link" href="/images/Evan_Smith_CV.pdf" download>
+    <a class="download-link" href="/images/EvanGibsonSmithCV.pdf" download>
     📄 Download CV
     </a>
 </div>
